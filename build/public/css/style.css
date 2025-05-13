@@ -1,0 +1,418 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #232323;
+    font-family: sans-serif, Helvetica;
+}
+
+:root {
+    --font-size-h1: 48px;
+    --font-size-medio: 24px;
+    --font-size-pequeno: 20px;
+    --font-weight-forte: 900;
+    --font-weight-medio: 400;
+}
+
+#area-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#section-logo-netflix img {
+    width: 150px;
+    height: 40px;
+}
+
+#section-rigth {
+    display: flex;
+    align-items: center;
+}
+
+#select-idioma {
+    background-color: rgba(61, 60, 60, 0.404);
+    border: 1px solid #928f8f;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    border-radius: 3px;
+}
+
+#select-idioma select {
+    outline: none;
+    border: none;
+    appearance: none;
+}
+
+#select-idioma .internet {
+    width: 20px;
+    height: 20px;
+    background-image: url("/image/internet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#select-idioma .seta-para-baixo {
+    margin-bottom: -5px;
+    width: 10px;
+    height: 9px;
+    background-image: url("/image/seta-triangular-apontando-para-baixo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
+}
+
+#idioma {
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.buttonEntrar {
+    margin-left: 20px;
+    padding: 8px 16px;
+    background-color: #E50914;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+
+#bannerLogin {
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/39f3c979-c105-4948-9c51-611eedf3a6fd/36ddf343-62a3-41a5-8da6-7745fc668cac/BR-pt-20230612-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-size: 124.5% 126.6%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: calc(100vh + 83px);
+    width: inherit;
+}
+
+#conteudoBanner {
+    height: inherit;
+    width: inherit;
+    display: grid;
+    justify-content: center;
+    color: #FFF;
+    background-image: linear-gradient(#000000d7, rgba(0, 0, 0, 0.39), #000000d7);
+}
+
+.banner {
+    width: 984px;
+}
+
+.container {
+    margin-bottom: 8px;
+    background-color: #000000;
+}
+
+.conteudo {
+    width: 984px;
+    margin: auto;
+}
+
+#area-login-inicial {
+    text-align: center;
+
+}
+
+#login-inicial {
+    text-align: center;
+}
+
+#conteudoBanner h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-forte);
+}
+
+#conteudoBanner p {
+    margin-top: 20px;
+    font-size: var(--font-size-medio);
+    font-weight: var(--font-size-medio);
+}
+
+#login-inicial h3 {
+    padding: 25px 0px 20px 0px;
+    font-size: var(--font-size-pequeno);
+    font-weight: var(--font-weight-medio);
+}
+
+#input-inicial {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-inicial input {
+    font-size: var(--font-size-pequeno);
+    width: 407px;
+    height: 100%;
+    padding: 0px 10px;
+    color: #727375;
+    background-color: #0f1011cb;
+    border: 1px solid #646464;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#input-inicial button {
+    box-sizing: border-box;
+    height: 100%;
+    width: 170px;
+    font-size: 25px;
+    border: none;
+    background-color: #e50914;
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#input-inicial button img {
+    width: 18px;
+    height: 18px;
+}
+
+#area-anuncio {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+}
+
+#anuncio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    margin-top: -74px;
+    position: absolute;
+    box-sizing: border-box;
+    color: #FFF;
+    height: 144px;
+    width: calc(100vw - 148px);
+    background-image: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+}
+
+#anuncio .img-saco-pipoca {
+    margin-right: 28px;
+    width: 96px;
+    height: 96px;
+}
+
+.text-maior {
+    font-size: var(--font-size-pequeno);
+    font-weight: var(--font-weight-medio);
+}
+
+.text-menor {
+    font-size: 16px;
+    font-weight: var(--font-weight-medio);
+}
+
+#anuncio button {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: #358BFF;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: var(--font-weight-medio);
+}
+
+#anuncio button img {
+    width: 18px;
+    height: 18px;
+    margin-left: 15px;
+
+}
+.buttonLoad {
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #ffffff00; 
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+#aproveiteTv {
+    padding: 70px 0px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+#aproveiteTv h2 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-forte);
+}
+
+#aproveiteTv p {
+    font-size: var(--font-size-medio);
+    font-weight: var(--font-weight-medio);
+    margin: 16px 0px 0px;
+}
+
+#aproveiteTv img {
+    width: 486px;
+}
+#aproveiteTv .video {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#aproveiteTv .video img {
+    position: absolute;
+}
+.video video {
+    width: 300px; 
+    margin-bottom: 120px;
+}
+.primeiro {
+    margin: 90px 0px;
+}
+#primeiro-video {
+    width: 355px; 
+    margin-bottom: 12px;
+}
+#img-assistir-offline {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#texto-cima-img {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 3px solid rgb(54, 49, 49);
+    border-radius: 15px;
+    background-color: #000000;
+    position: absolute;
+    height: 96px;
+    margin-bottom: 23px;
+    
+}
+#texto-cima-img img {
+    height: 72px;
+    width: auto;
+
+}
+
+#area-text-cima-img {
+    padding: 0px 15px;
+    width: 145px;
+    box-sizing: border-box;
+}
+#area-text-cima-img .area-text-title {
+    font-size: 16px;
+    font-weight: var(--font-weight-medio);
+}
+#area-text-cima-img .area-text-download {
+    font-size: 14px;
+    font-weight: var(--font-weight-medio);
+    color: #255ffd;
+}
+.icone-download {
+    width: 48px;
+    height: 60px;
+    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
+    background-size: 100%;
+}
+#Perguntas {
+    color: #FFF;
+    font-size: var(--font-size-medio);
+    font-weight: var(--font-weight-medio);
+    padding: 30px 0px 70px 0px;
+
+}
+
+#Perguntas h2 {
+    margin: 30px 0px 20px 0px;
+    text-align: center;
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-forte);
+}
+
+#Perguntas li {
+    list-style: none;
+    margin-bottom: 10px;
+    
+}
+
+.button-pergunta {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #2d2d2d;
+    
+}
+.resposta {
+    transition: .5s;
+    background-color: #2d2d2d;
+    margin-top: 1px;
+    padding: 24px;
+    display: none;
+}
+.button-pergunta:hover {
+    background-color: #636060;
+}
+
+footer {
+    padding: 40px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #d4d1d1ee;
+    background-color: #000000;
+}
+
+footer #title-footer {
+    padding: 12px 0px;
+    font-size: 16px;
+}
+
+footer ul {
+    padding: 12px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+footer a,
+footer li {
+    color: #d4d1d1ee;
+    list-style: none;
+    padding: 10px 0px;
+}
+
+#select-idioma {
+    margin: 20px 0px;
+}
+
+#select-idioma p {
+    margin: 20px 0px;
+}
+
+.select-idioma-footer {
+    display: flex;
+}

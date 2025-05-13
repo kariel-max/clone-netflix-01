@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/passos.css">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+</head>
+
+<body style="background-color:white">
+    <header style="padding: 0px 15px; border-bottom: 1px solid black; margin-bottom: 50px" >
+   <section id="area-header">
+    <div id="section-logo-netflix"> <img src="/public/image/netflix-logo.png"></div>
+    <div id="section-rigth">
+        <div id="select-idioma">
+            <div class="internet"></div>
+            <select name="" id="idioma">
+                <option value="">Português</option>
+                <option value="">English</option>
+            </select>
+            <div class="seta-para-baixo"></div>
+        </div>
+
+    <form  action="/cadastro/singIn" method="post">
+    <a href=""><button class="buttonEntrar" type="submit">Entrar</button></a> </form>
+</section>
+    </header>
+    <main class="mainContainer">
+       <section class="form_Passo">
+        <p class="passo">PASSO  DE 3</p>
+        <h1>
+        Bem-vindo(a) de volta!<br>
+        É fácil assinar a Netflix.
+        </h1>
+        <p>Informe sua senha para começar a assistir.</p>
+
+        <form class="formPassoInput" action="/cadastro/singUp" method="post">
+            <label for="email">Email:</label>
+            <input class="inputPasso" id="email" type="email" name="Email">
+
+            <label for="senha">Senha:</label>
+            <input class="inputPasso" id="senha" type="password" name="Senha">
+
+            <a  href="#">Esqueceu a senha?</a>
+            <button class="buttonProximoPasso" type="submit">Próximo</button>
+        </form>
+
+       </section>
+    </main>
+    <footer>
+    <section class="conteudo" >
+        <div id="title-footer">Dúvidas? Ligue <a href="#">0800 591 8942</a></div>
+        <ul>
+            <li><a href="#">Perguntas frequentes</a></li>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Preferências de cookies</a></li>
+            <li><a href="#">Informações corporativas</a></li>
+            <li><a href="#">Privacidade</a></li>
+            
+        </ul>
+        <div class="select-idioma-footer">
+            <div id="select-idioma">
+                <div class="internet"></div>
+                <select name="" id="idioma">
+                    <option value="">Português</option>
+                    <option value="">English</option>
+                </select>
+                <div class="seta-para-baixo"></div>
+            </div>
+        </div>
+        <p>Netflix Brasil</p>
+    </section>
+</footer>
+    <script>
+    
+    </script>
+</body>
+</html>

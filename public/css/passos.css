@@ -1,0 +1,265 @@
+body {
+    overflow-x: hidden;
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 95vh;
+}
+.form_Passo {
+    width: 370px;
+    height: 95vh;
+}
+ /* area de texto */
+
+.form_Passo > h1 {
+    font-size: 2em;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px 20px 0px;
+}
+.form_Passo p {
+    color: rgba(19, 18, 18, 0.712);
+    font-weight:lighter;
+}
+.form_Passo p:nth-last-child(3) {
+    font-size: 18px;
+}
+.passo {
+    font-size: 12px;
+}
+.formText {
+    padding-top: 20px ;
+    padding-bottom: 15px;
+}
+.formText > .strong {
+    font-weight: bold;
+}
+.form_Passo {
+   margin: auto;
+}
+
+/* area de formulario */
+
+.formPassoInput {
+    display: flex;
+    flex-direction: column;
+}
+.inputPasso {
+    height: 40px;
+    margin-bottom: 15px;
+}
+.formPassoInput a {
+    text-decoration: none;
+    margin-bottom: 15px;
+    color: rgba(0, 158, 250, 0.884);
+}
+.formPassoInput a:hover {
+    text-decoration: underline;
+}
+.buttonProximoPasso {
+    height: 60px;
+    width: 100%;
+    background-color: red;
+    font-size: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.buttonProximoPasso:hover {
+   background-color: rgba(255, 0, 0, 0.719);
+}
+
+/*----------------------- passo 2 -------------------- */
+.form_Passo2 {
+    margin: auto;
+    width: 350px;
+}
+
+.containerTitle {
+    text-align: center;
+}
+.containerTitle img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.containerPasso {
+    margin: 20px;
+    line-height: 30px;
+}
+
+.tickTextImg {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.areatickTextImg {
+    display: flex;
+    margin-bottom: 10px;
+}
+.areatickTextImg img {
+    width: 25px;
+    height: 25px;
+}
+
+
+/*---------------------- planForm passos -----------------*/
+.mainContainer {
+   height: max-content;
+}
+
+#planformSection {
+    margin: 0px 150px 100px 150px;
+}
+.planformTitle p{
+    font-size: 14px;
+}
+.planformTitle h1{
+    font-size: 30px;
+}
+.planformPlanos {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+    
+}
+.containerPlan {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.containerPlan:nth-last-child(1) {
+    margin-left: 10px;
+}
+.containerPlan:nth-child(1) {
+    margin-right: 10px;
+}
+.backgroundPlanTop {
+    
+    background-color: rgb(133, 55, 68);
+    border-radius: 10px;
+    padding: 15px;
+    height: 60px;
+    min-width: 200px;
+    color:white;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.infoPlan {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    padding-bottom: 10px;
+    margin: 15px;
+    border-bottom: 1px solid black;
+}
+.infoPlan:nth-last-child(1) {
+    border-bottom: none;
+}
+.titleInfoPlan {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(43, 43, 43, 0.781);
+}
+.infoInfoPlan {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(66, 65, 65, 0.925);
+}
+.infoPlan:nth-child(2) > .infoInfoPlan::first-line {
+    font-size: 18px;
+}
+
+.planformSaibaMais p {
+    font-size: 13px;
+    color: rgba(65, 65, 65, 0.76);
+    margin-bottom: 10px;
+}
+.planformSaibaMais a {
+    text-decoration: none;
+    color: rgb(19, 113, 255);
+}
+.planformSaibaMais a:hover {
+    text-decoration: underline;
+}
+.planformButton {
+    width: 400px;
+    margin: 20px auto;
+}
+
+
+
+/* ----------------------- payment ---------------------- */
+
+#sectionPayment {
+    width: 500px;
+    height: 100vh;
+    margin: auto;
+}
+
+.payTitle {
+    text-align: center;
+}
+
+.payTitle h1 {
+    font-size: 30px;
+}
+.payTitle p {
+    font-size: 12px;
+    margin: 40px 0px 10px 0px;
+}
+.payTitle > p:nth-child(4) {
+    font-size: 19px;
+    line-height: 26px;
+    margin: 20px 20px 10px 20px;
+    color: rgba(36, 35, 35, 0.884);
+}
+.payTitle span {
+    font-weight: bold;
+    line-height: 20px;
+}
+.paymentCrip {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.paymentCrip img {
+    height: 16px;
+    width: 16px;
+    margin: -2px 5px 0px 5px;
+}
+
+.cardPayment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgba(219, 209, 209, 0.774);
+    border-radius: 5px;
+    padding: 20px 15px;
+    margin: 2px 0px 8px 0px;
+
+}
+.cardPayment img {
+    width: 20px;
+}
+.codPayment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgba(219, 209, 209, 0.774);
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+
+.codPayment img {
+    width: 20px;
+}
+
+
+
