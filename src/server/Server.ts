@@ -7,7 +7,7 @@ import cors from 'cors'
 
 const server = express();
 server.use(cors({
-    origin: 'https://move-dev-5ogn3.ondigitalocean.app', // Apenas essa origem pode acessar
+    origin: 'https://clone-clear-ejsta.ondigitalocean.app', // Apenas essa origem pode acessar
     methods: ['GET', 'POST'], // Métodos permitidos
     allowedHeaders: ['Content-Type', 'Authorization'] // Cabeçalhos permitidos
   }));

@@ -1,4 +1,0 @@
-databases:
-- engine: PG
-  name: users
-  version: "16"
