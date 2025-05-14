@@ -13,7 +13,7 @@ const cors_1 = __importDefault(require("cors"));
 const server = (0, express_1.default)();
 exports.server = server;
 server.use((0, cors_1.default)({
-    origin: 'https://move-dev-5ogn3.ondigitalocean.app', // Apenas essa origem pode acessar
+    origin: 'clone-clear-ejsta.ondigitalocean.app', // Apenas essa origem pode acessar
     methods: ['GET', 'POST'], // Métodos permitidos
     allowedHeaders: ['Content-Type', 'Authorization'] // Cabeçalhos permitidos
 }));
