@@ -64,7 +64,7 @@ const singUp = async (req, res) => {
         });
         if (usuario) {
             await usuario.save();
-            res.redirect('https://move-dev-5ogn3.ondigitalocean.app/cadastro/autenticar');
+            res.redirect('/cadastro/autenticar');
             return;
         }
         else {
